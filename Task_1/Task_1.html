@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="#">
+  <style>
+    /* Base styles for the image gallery container */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 10px; 
+    padding: 10px;
+    
+}
+
+
+
+ img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.image_1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    
+
+    .image_2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
+    .image_3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+    .image_4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    }
+    .image_5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
+    .image_6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <div class="image_1"><img src="./asset/165066.jpg" alt="Image 1"></div>
+        <div class="image_2"><img src="./asset/18678.jpg" alt="Image 2"></div>
+        <div class="image_3"><img src="./asset/253379.jpg" alt="Image 3"></div>
+        <div class="image_4"><img src="./asset/324399.jpg" alt="Image 4"></div>
+        <div class="image_5"><img src="./asset/4706496.jpg" alt="Image 5"></div>
+        <div class="image_6"><img src="./asset/9163.jpg" alt="Image 6"></div>
+    </div>
+</body>
+</html>
