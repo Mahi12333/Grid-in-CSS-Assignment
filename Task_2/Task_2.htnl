@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 150px 150px;
+            gap: 20px;
+        }
+        .grid-container .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: bisque;
+        }
+        .grid-container .item2{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: bisque;
+        }
+        .grid-container .item3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: bisque;
+        }
+        .grid-container .item4{
+            background-color: bisque;
+        }
+        div{
+            border-radius: 10px;
+            padding: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="grid-container">
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+        <div class="item4">D</div>
+    </section>
+</body>
+</html>
