@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Auto Rows and Columns</title>
+    <link rel="stylesheet" href="#">
+  <styl>
+    .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Explicit columns*/
+  grid-auto-columns: 150px; /* Implicitly created columns will be 150px wide */
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.item {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  border: 1px solid #333;
+}
+
+.grid-containerk {
+  display: grid;
+  grid-template-columns: 100px 100px 35px;
+  grid-auto-rows: 50px;
+}
+
+  </styl>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
