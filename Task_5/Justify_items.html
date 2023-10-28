@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Item</title>
+    <style>
+        /* In this example, justify-items: center; is applied to the grid container, which horizontally center-aligns all the grid items within the container. */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+    </div>
+</body>
+</html>
